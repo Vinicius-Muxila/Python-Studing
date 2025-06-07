@@ -9,6 +9,12 @@ tarefas = {
 # acrescentar uma nova tarefa
 
 tarefas["pedalar"] = ["3x na semana" , "Periodo de 2 meses"]
+print(tarefas)
+
+# editar uma tarefa 
+
+tarefas["correr"] = ["3x na semana" , "pace de 6" , "Periodo de 2 meses"]
+print("correr")
 
 # pesquisar todas as tarefas inseridas
 
