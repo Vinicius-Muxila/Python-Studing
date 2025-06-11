@@ -4,24 +4,33 @@ tarefas = {}
 opcao = perguntar()
 
 while opcao=="I" or opcao=="P" or opcao=="E" or opcao=="D":
+
+# inserir novas tarefas
+
   if opcao == "I":
     inserir(tarefas)
 
     opcao = perguntar()
+
+# pesquisar tarefas já incluídas    
     
-if opcao == "P":
+  elif opcao == "P":
     pesquisar(tarefas)
 
     opcao = perguntar()
+
+# editar alguma tarefa já inserida    
       
-if opcao == "E":
+  elif opcao == "E":
     editar(tarefas)
 
     opcao = perguntar()
+
+# excluir alguma tarefa que foi inserida
         
-if opcao == "D":
+  elif opcao == "D":
     deletar(tarefas)
 
     opcao = perguntarSair()
-
-print("Programa encerrado.")
+else:
+  print("Programa encerrado.")
